@@ -1,0 +1,70 @@
+<!--
+Készítsünk weboldalt, ami egy alapvető számológépet valósít meg.
+A felhasználó két beviteli mezőbe tudja felvinni a két számot, és egy legördülő menüből tudja kiválasztani a műveletet, 
+és egy gomb segítségével tudja elindítani a számolást. Egy JavaScript program végezze el a számítást,
+és írja vissza az eredményt az oldalon egy felsorolásba, ahol az összes eddigi művelet és eredmény is látszik.
+Az oldalnak adjunk egy alap design-t is.
+Fejlécként jelenjen meg egy link, saját magára mutatva, egyfajta "reset"-ként működve alapállapotba hozva az oldalt.
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<title>Számológép</title>
+		<meta charset="utf-8">
+		<link rel="Stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>				
+		<section id="content">
+			<header id="mainHeader">
+				<div id="logo"></div>
+				<ul>
+					<li>
+						<a href="index.html">Főoldal</a>
+					</li>
+				</ul>				
+			</header>
+			<section id="mainContent">
+				<h1>Számológép</h1>
+				<table>
+					<tr>
+						<td>Első operandus:</td>
+						<td class="inputData">
+							<input type="number" id="a" placeholder="Első operandus>"
+						</td>
+					</tr>
+					<tr>
+						<td>Második operandus:</td>
+						<td class="inputData">
+							<input type="number" id="b" placeholder="Második operandus>"
+						</td>
+					</tr>
+					<tr>
+						<td>Művelet:</td>
+						<td class="inputData">
+							<select id="operations">
+								<option value="+">Összeadás</option>
+								<option value="-">Kivonás</option>
+								<option value="*">Szorzás</option>
+								<option value="/">Osztás</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="button" id="calculation" value="Számol" onclick="buttonClick()">
+						</td>
+					</tr>
+				</table>
+				<h2>Eredmények:</h2>
+				<ul id="previous">
+
+				</ul>
+			</section>
+			<footer id="mainFooter">
+				<p>2026 Copyright BB</p>
+			</footer>
+		</section>
+	</body>
+</html>

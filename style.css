@@ -1,0 +1,69 @@
+body{
+	background-color: azure;
+	font-size: 12pt;
+}
+
+#content{
+	width: 1280px;
+	min-height: 800px;
+	padding: 5px;
+	margin: 0px auto;
+}
+
+#mainHeader, #mainContent, #mainFooter{
+	width: 100%;
+	margin: 5px 0px;
+	background-color: rgb(230, 230, 230);
+}
+
+li, a{
+	margin: 0PX auto;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+a:hover{
+	color:darkcyan;
+	font-weight: bold;
+}
+
+#logo{
+	background-image: url(calculator.png);
+	width: 64px;
+	height: 64px;
+	margin: 0PX auto;
+}
+
+table{
+	border: 2px solid black;
+	margin: 0px auto;
+	font-weight: bold;
+}
+
+td{
+	border: 1px solid black;
+	padding: 0px 5px;
+}
+
+h1, h2{
+	text-align: center;
+	color: coral;
+	margin: 10px 0px;
+}
+
+#calculation, #operations{
+	width: 100%;
+}
+
+#previous{
+	text-align: center;
+}
+
+#mainContent{
+	min-height: 500px;
+}
+
+#mainFooter{
+	text-align: center;
+}
